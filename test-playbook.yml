@@ -1,0 +1,6 @@
+- hosts: localhost
+  roles:
+    - test_role
+  post_tasks:
+    - include_role:
+        name: test_role
