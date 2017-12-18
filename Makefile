@@ -15,6 +15,10 @@ test_03abce2: clean $(ENV)
 	$(PIP) install git+git://github.com/ansible/ansible.git@03abce2d39a1ff4ad5d1f7f8d916ba33a3be44d5
 	$(ENV)/bin/ansible-playbook test-playbook.yml -vvvv
 
+test_kiorky_2_4: clean $(ENV)
+	$(PIP) install git+git://github.com/corpusops/ansible.git@a2.4
+	$(ENV)/bin/ansible-playbook test-playbook.yml -vvvv
+
 test_2_4_2_0: clean $(ENV)
 	$(PIP) install ansible==2.4.2.0
 	$(ENV)/bin/ansible-playbook test-playbook.yml -vvvv
