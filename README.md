@@ -22,3 +22,6 @@ Alternatively, you can run the test inside a Docker container.
 1. Clone this repository
 1. Run `docker build . --tag ansible_include_role_bug`
 1. Run `docker run ansible_include_role_bug make test_2_4_2_0`
+
+PR [#32565](https://github.com/ansible/ansible/pull/32565) seems to fix this
+issue.
